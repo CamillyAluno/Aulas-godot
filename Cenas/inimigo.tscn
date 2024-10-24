@@ -1,0 +1,65 @@
+[gd_scene load_steps=14 format=3 uid="uid://dv405af1s48go"]
+
+[ext_resource type="Script" path="res://Script/inimigo.gd" id="1_3bbjr"]
+[ext_resource type="Texture2D" uid="uid://785tlv8xoy1p" path="res://Sprites/bluebat/skeleton-fly_00.png" id="1_i2ru5"]
+[ext_resource type="Texture2D" uid="uid://ck8pkchl6kp7h" path="res://Sprites/bluebat/skeleton-fly_01.png" id="2_mo1xr"]
+[ext_resource type="Texture2D" uid="uid://dkgbnutffgkmc" path="res://Sprites/bluebat/skeleton-fly_02.png" id="3_al1x7"]
+[ext_resource type="Texture2D" uid="uid://l4r30le503tj" path="res://Sprites/bluebat/skeleton-fly_03.png" id="4_qwddt"]
+[ext_resource type="Texture2D" uid="uid://c4e0sva0igdtp" path="res://Sprites/bluebat/skeleton-fly_04.png" id="5_le3f0"]
+[ext_resource type="Texture2D" uid="uid://dfrwbot1j0tfh" path="res://Sprites/bluebat/skeleton-fly_05.png" id="6_6d2dn"]
+[ext_resource type="Texture2D" uid="uid://bbosor8mluw8q" path="res://Sprites/bluebat/skeleton-fly_06.png" id="7_1kxn1"]
+[ext_resource type="Texture2D" uid="uid://c01nnsbubbhn" path="res://Sprites/bluebat/skeleton-fly_07.png" id="8_c30nq"]
+[ext_resource type="Texture2D" uid="uid://o2bnj30l6n3k" path="res://Sprites/bluebat/skeleton-fly_08.png" id="9_dhgti"]
+[ext_resource type="Texture2D" uid="uid://cdi5xiy24nnom" path="res://Sprites/bluebat/skeleton-fly_09.png" id="10_5nqef"]
+[ext_resource type="Texture2D" uid="uid://kicca1uxy6se" path="res://Sprites/bluebat/skeleton-fly_10.png" id="11_sl3al"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_akodh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_i2ru5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_mo1xr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_al1x7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_qwddt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_le3f0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_6d2dn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_1kxn1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_c30nq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_dhgti")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_5nqef")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_sl3al")
+}],
+"loop": true,
+"name": &"default",
+"speed": 30.0
+}]
+
+[node name="inimigo" type="Node2D"]
+position = Vector2(230, 131)
+script = ExtResource("1_3bbjr")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(830, 3)
+scale = Vector2(0.175214, 0.175214)
+sprite_frames = SubResource("SpriteFrames_akodh")
+autoplay = "default"

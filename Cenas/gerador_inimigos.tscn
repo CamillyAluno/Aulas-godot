@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://d33yfjtmecac4"]
+
+[ext_resource type="Script" path="res://Script/gerador_inimigos.gd" id="1_cg0h5"]
+
+[node name="gerador_inimigos" type="Node2D"]
+script = ExtResource("1_cg0h5")

@@ -1,0 +1,57 @@
+[gd_scene load_steps=11 format=3 uid="uid://qmg5qnxlhrwg"]
+
+[ext_resource type="Texture2D" uid="uid://dui60h2mm707m" path="res://Sprites/tapera/frame-1.png" id="1_8jg36"]
+[ext_resource type="Script" path="res://Script/jogador.gd" id="1_p4rx6"]
+[ext_resource type="Texture2D" uid="uid://vcsosvkbdw6a" path="res://Sprites/tapera/frame-2.png" id="2_6un7o"]
+[ext_resource type="Texture2D" uid="uid://duijermtgthmv" path="res://Sprites/tapera/frame-3.png" id="3_muvm0"]
+[ext_resource type="Texture2D" uid="uid://tm7ejhxmfl8j" path="res://Sprites/tapera/frame-4.png" id="4_ywwgj"]
+[ext_resource type="Texture2D" uid="uid://jjvxjw56mshm" path="res://Sprites/tapera/frame-5.png" id="5_1bhcv"]
+[ext_resource type="Texture2D" uid="uid://culyeiwwfskwb" path="res://Sprites/tapera/frame-6.png" id="6_n1h6x"]
+[ext_resource type="Texture2D" uid="uid://csjaoxdofjmtv" path="res://Sprites/tapera/frame-7.png" id="7_4jih7"]
+[ext_resource type="Texture2D" uid="uid://c12x38wtboglj" path="res://Sprites/tapera/frame-8.png" id="8_fmra0"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dgd8f"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_8jg36")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_6un7o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_muvm0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ywwgj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_1bhcv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_n1h6x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_4jih7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_fmra0")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="jogador" type="Node2D"]
+position = Vector2(396, 204)
+script = ExtResource("1_p4rx6")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-71, 0)
+scale = Vector2(0.25, 0.25)
+sprite_frames = SubResource("SpriteFrames_dgd8f")
+autoplay = "default"
+frame = 6
+frame_progress = 0.734199
